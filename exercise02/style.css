@@ -11,14 +11,44 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+section {
+    width: min-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    margin: .75rem;
+}
+
+h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2, p, button {
+    margin: 1rem;
+}
+
+button {
+    margin-top: 0;
+}
+
+main {
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    main {
+        width: 800px;
+        margin: auto;
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
-    
+    main {
+        width: 400px;
+        margin: auto;
+    }
 }
