@@ -84,5 +84,4 @@ FROM posts
 INNER JOIN comments ON comments.post_id = posts.id
 GROUP BY posts.id
 HAVING posts.user_id=26
-ORDER BY count(comments) DESC
-;
+ORDER BY count(comments) DESC;
